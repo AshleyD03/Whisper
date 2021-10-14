@@ -1,0 +1,38 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	padding: 0px;
+	margin: 0px;
+	outline: 0px;
+	border: 0px;
+	overflow: hidden;
+	font-family: "Roboto";
+	background: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+button, input {
+	border: none;
+	background-color: inherit;
+	font-family: "Roboto";
+	outline: none;
+}
+::-webkit-scrollbar {
+	width: 0.5rem;
+	height: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+	height: 3rem;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.75);
+}
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	box-shadow: none;
+}

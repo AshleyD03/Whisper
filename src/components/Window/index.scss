@@ -1,0 +1,28 @@
+.window-container {
+  transition: background 1s linear;
+  width: 100vw;
+  height: calc(100vh - 2rem);
+
+  .backdrop {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    height: calc(100% - 2rem);
+    width: 100%;
+    background: #000000c2;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .5s cubic-bezier(0.19, 1, 0.22, 1);
+
+    &.true {
+      backdrop-filter: blur(7px);
+      opacity: 1;
+    }
+    &.false {
+      pointer-events: none;
+    }
+  }
+}
